@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flexibile layout</title>
+    <meta charset="utf-8">
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+        }
+        aside{
+            background-color: deepskyblue;
+        }
+        footer{
+            background-color: tomato;
+        }
+        header{
+            background-color: gold;
+        }
+        main{
+            background-color: lightgreen;
+            display: flex;
+            flex: 1;
+        
+        }
+    
+    </style>
+
+
+</head>
+
+
+<body>
+    <header>
+        <h1>The main header</h1>
+        <p>A tagline or subtitle</p>
+
+        <form>
+            <labe for="search">Search this website:</labe><br>
+            <input id="search" name="q" type="search" placeholder="Find in site" autofocus>
+            <button>Go</button>
+        </form>
+    </header>
+
+
+    <main>
+        <aside>
+
+            <nav>
+                Navigation links
+            </nav>
+        </aside>
+        <div id="content">
+            This is where main content goes
+        </div>
+    </main>
+
+    <footer>Copyright &copy; 2019</footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My contacts</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1>My contacts</h1>
+        <ul id="list"></ul>
+
+        <script>
+            const contacts = [
+                'Adrian',
+                'Dorian',
+                'Mihai',
+                'Ruxandra',
+                'Paula',
+                'Ana'
+            ];
+
+
+            const list = document.getElementById('list');
+
+            for(let i = 0; i < contacts.length; i++){
+                list.innerHTML += '<li>' + contacts[i] + '</li>';
+                }
+                //list.insertAdjacentElement('beforeend', '<li>' + contacts[i] + '</li>');
+
+                contacts.forEach(function(contacts){
+                    list.innerHTML += '<li>' + contacts + '<li>';
+                });
+
+                contacts.forEach((contacts) => {
+                    list.innerHTML += '<li>' + contacts + '<li>';
+                });
+
+                contacts.forEach((contacts) => {
+                    list.innerHTML += `<li>${contacts}<li>`;
+                });
+
+                const tags = contacts.map(contacts => `<li>${contacts}</li>`);
+                list.innerHTML = tags.join('');
+                
+        </script>
+    </body>
+</html>
