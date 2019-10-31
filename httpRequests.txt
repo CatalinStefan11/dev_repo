@@ -1,0 +1,54 @@
+
+//getting all resources:
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+//getting a specific resource: 
+fetch('https://jsonplaceholder.typicode.com/posts/2')
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+
+//getting some resource based on filtering:
+fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+//creating a new resource:
+
+fetch('https://jsonplaceholder.typicode.com/posts',{
+    method: 'POST',
+    headers: {
+        "Content-type": "application/json; charset=UTF-8"
+    },
+    body: JSON.stringify({
+        title:'foo',
+        bodyL:'bar',
+        userId:1
+    }),
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+
+fetch('https://jsonplaceholder.typicode.com/posts/1',{
+    method: 'PATCH',
+    headers:{
+        "Content-type": "application/json; charset=UTF-8"
+},
+    body: JSON.stringify({
+        title: 'foo'
+    }),
+})
+    .then(response => response.json())
+    .then(json => console.log(json));
+
+fetch('https://jsonplaceholder.typicode.com/posts/1',{
+    method: 'PATCH'
+});
+
+
+
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    
+<body>
+
+
+
+<form>
+ <!-- First name:<br>
+  <input type="text" name="firstname" value="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="lastname">
+  Email:<br>
+  <input type="text" name="firstname" value="firstname">
+  <br>
+  Phone:<br>
+  <input type="text" name="firstname" value="firstname">
+  <br>
+  <br><br> -->
+
+  <p>
+      <label>Enter your name</label>
+      <input type="text" required minlength="2" maxlength="255" placeholder="First name and last name" name="name">
+  </p>
+
+  
+  <p>
+        <label>Enter your email</label>
+        <input type="email" required minlength="2" maxlength="255" placeholder="email" name="email">
+    </p>
+    
+  <p>
+        <label>Enter your Phone</label>
+        <input type="tel" required minlength="2" maxlength="255" placeholder="phone" name="phone">
+    </p>
+
+    <p>
+        <label>
+            Website URL
+        </label>
+        <input type="url" maxlength="1000" placeholder="http://">
+        <small>{optional}</small>
+    </p>
+
+    <p>
+        <label>Your age:</label>
+        <input type="number" min="10" max="100" placeholder="Your age">
+        <small>{optional}</small>
+    </p>
+
+    <p>
+
+        <label>Birth date: <br>
+            <input type="date" required placeholder="Enter your birth date">
+        </label>
+        
+    </p>
+
+    <p>
+        <label>Favourite vegetable</label>
+        <input list="vegetables">
+
+        <datalist id="vegetables">
+     <option value="Apple">
+     <option value="Greaps">
+     <option value="Banana">
+     <option value="Pear">
+    <option value="Strawberries">
+</datalist>
+        
+    </p>
+
+    <p>
+        <label>
+            Favourite vegetable:<br>
+            <select>
+                <option>--</option>
+                <option>Cucumber</option>
+                <option>Carrot</option>
+                <option>Spinach</option>
+            
+            </select>
+        </label>
+    </P>
+
+    <p>
+        <label>
+            Favourite color:
+            <input type="color" value="#f6b73c">
+
+        </label>
+    </p>
+    
+    <p>
+        <label>
+            What's your usual time to wake up?<br>
+            <input type="time">
+            <small>{optional}</small>
+        </label>
+    </p>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other 
+
+  <br><br>
+  
+  
+  <br><br>
+  <button type="submit"><b>Submit</b></button>
+  <button type="reset">Reset</button>
+
+</form> 
+
+
+
+</body>
+</html>
