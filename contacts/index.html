@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact management</title>
+        <meta charset="utf-8" lang="en">
+        <script type="module">
+            import { init } from '/index.js';
+            init();
+        </script>
+    </head>
+
+    <body>
+
+        <h1>My contacts</h1>
+
+        <form>
+                <input type="text" required placeholder="Enter your name" name="Name">
+                <input type="email" required placeholder="Enter your email" name="Email">
+                <input type="tel" required placeholder="Enter your phone" name="Phone">
+                <button type="submit">Add a new contact</button>
+        </form>
+
+        <form id="form-remove">
+            <ul id="list"></ul>
+            <button type="submit">Remove selected contacts</button>
+        </form>       
+    </body>
+</html>
+

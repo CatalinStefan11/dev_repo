@@ -1,79 +1,65 @@
-div
-{
-    border-radius: 5px;
+div {
+  border-radius: 5px;
 }
-#header
-{
-    position: fixed;
-    z-index: 1;
-    height:40px;
-    width: 98%;
-    background-color: #668284;
-    margin-bottom: 10px
+#header {
+  position: fixed;
+  z-index: 1;
+  height: 40px;
+  width: 98%;
+  background-color: #668284;
+  margin-bottom: 10px;
 }
 #name {
-        float:left;
-        margin-left: 20px;
-        padding-bottom: 10px;
-        font-size: 16px;
-        font-family: Verdana, sans-serif;
-        color: #ffffff;
+  float: left;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #ffffff;
 }
-#email{
-    float:right;
-    margin-right: 20px;
-	padding-bottom: 10px;
-	font-size: 16px;
-	font-family: Verdana, sans-serif;
-	color: #ffffff;
-}
-
-
-.right
-{
-    float: left;
-    margin-top: 50px;
-    padding-left:10px;
-    background-color: #E3EDD8;
+#email {
+  float: right;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  color: #ffffff;
 }
 
-
-h3
-{
-    text-decoration: underline;
-    
+.right {
+  float: left;
+  margin-top: 50px;
+  padding-left: 10px;
+  background-color: #e3edd8;
 }
 
-#job-responsibilities
-{
-    padding: 3px;
+h3 {
+  text-decoration: underline;
 }
 
-table
-{
-    border: 1px dashed black;
-}
-td
-{
-    padding: 2px;
-    border: 1px solid #E88741;
+#job-responsibilities {
+  padding: 3px;
 }
 
-#knowledge
-{
-    font-weight:bold;
+table {
+  border: 1px dashed black;
+}
+td {
+  padding: 2px;
+  border: 1px solid #e88741;
 }
 
-#company-name
-{
-    height:2px;
-    text-decoration:underline;
+#knowledge {
+  font-weight: bold;
 }
-#job-title
-{
-    height: 5px;
+
+#company-name {
+  height: 2px;
+  text-decoration: underline;
 }
-#heading
-{
-    font-weight:bold;
+#job-title {
+  height: 5px;
+}
+#heading {
+  font-weight: bold;
 }
